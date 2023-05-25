@@ -15,4 +15,3 @@ class VendorsFacade
     _service ||= MmService.new
   end
 end
-end
