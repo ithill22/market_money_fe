@@ -39,17 +39,17 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 4ec1c1bf-ed02-443b-a8a4-b0593102fbde
+      - a0d5f35e-7661-451c-957c-6bfc695b9a40
       X-Runtime:
-      - '0.036176'
+      - '0.008483'
       Server-Timing:
-      - start_processing.action_controller;dur=3.26, sql.active_record;dur=5.28, instantiation.active_record;dur=0.18,
-        process_action.action_controller;dur=12.76
+      - start_processing.action_controller;dur=0.07, sql.active_record;dur=1.92, instantiation.active_record;dur=0.04,
+        process_action.action_controller;dur=3.36
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"322482","type":"market","attributes":{"name":"39 North
         Marketplace","street":"Downtown Sparks Victorian Ave","city":"Sparks","county":"Washoe","state":"Nevada","zip":"89431","lat":"39.534773","lon":"-119.754962","vendor_count":5}}}'
-  recorded_at: Thu, 25 May 2023 00:16:18 GMT
+  recorded_at: Thu, 25 May 2023 03:40:10 GMT
 recorded_with: VCR 6.1.0

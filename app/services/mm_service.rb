@@ -1,25 +1,28 @@
 class MmService
 
   def get_markets
-    get_url('markets')
+    response = conn.get('markets')
+    parse_response(response)[:data]
   end
 
   def get_market(market_id)
-    get_url("markets/#{market_id}")
+    response = conn.get("markets/#{market_id}")
+    parse_response(response)[:data]
   end
 
   def get_market_vendors(market_id)
-    get_url("markets/#{market_id}/vendors")
+    response = conn.get("markets/#{market_id}/vendors")
+    parse_response(response)[:data]
   end
 
   def get_vendor(vendor_id)
-    get_url("vendors/#{vendor_id}")
+    response = conn.get("vendors/#{vendor_id}")
+    parse_response(response)[:data]
   end
 
   private
-  def get_url(url)
-    response = conn.get(url)
-    JSON.parse(response.body, symbolize_names: true)[:data]
+  def parse_response(response)
+    JSON.parse(response.body, symbolize_names: true)
   end
 
   def conn

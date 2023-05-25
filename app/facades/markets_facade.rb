@@ -5,8 +5,8 @@ class MarketsFacade
     end
   end
 
-  def get_market(market_id)
-    market_data = service.get_market(market_id)
+  def get_market(id)
+    market_data = service.get_market(id)
     Market.new(market_data)
   end
 

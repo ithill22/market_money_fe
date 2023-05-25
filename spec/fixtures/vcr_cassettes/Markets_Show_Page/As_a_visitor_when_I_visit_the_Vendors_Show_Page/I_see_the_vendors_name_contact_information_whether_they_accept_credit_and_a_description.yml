@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://localhost:3000/api/v0/vendors/56282
+    uri: http://localhost:3000/api/v0/vendors/55340
     body:
       encoding: US-ASCII
       string: ''
@@ -35,23 +35,22 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"3c051ad0c2b31e60cb6647ccdb725034"
+      - W/"4668ac979417e863e694145168e2007a"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 9241a000-d67d-4aac-bb5e-998cd6cb7f3c
+      - c98ef860-3d70-4be4-825c-4148aaacea57
       X-Runtime:
-      - '0.006345'
+      - '0.148229'
       Server-Timing:
-      - start_processing.action_controller;dur=0.07, sql.active_record;dur=0.74, instantiation.active_record;dur=0.03,
-        process_action.action_controller;dur=1.41
+      - start_processing.action_controller;dur=0.38, sql.active_record;dur=31.96,
+        instantiation.active_record;dur=0.52, process_action.action_controller;dur=94.82
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"56282","type":"vendor","attributes":{"name":"Bookish
-        Bazaar","description":"A vibrant and colorful stall offering a diverse selection
-        of books from around the world, as well as handmade bookmarks and reading
-        accessories.","contact_name":"Kanesha Rippin","contact_phone":"1-223-658-3770","credit_accepted":true}}}'
-  recorded_at: Thu, 25 May 2023 03:40:10 GMT
+      string: '{"data":{"id":"55340","type":"vendor","attributes":{"name":"Saddle
+        Up Smoothies","description":"smoothie and juice vendor","contact_name":"Trang
+        Kling II","contact_phone":"1-866-326-0903","credit_accepted":false}}}'
+  recorded_at: Thu, 25 May 2023 14:46:52 GMT
 recorded_with: VCR 6.1.0
